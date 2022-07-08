@@ -10,7 +10,7 @@ public class MainCommand implements Command {
 	@Override
 	public String exec(HttpServletRequest request, HttpServletResponse response) {
 		//단순 시작 페이지를 보여주는 메소드
-		return "main/main";
+		return "main/main";  
 	}
 
 }
