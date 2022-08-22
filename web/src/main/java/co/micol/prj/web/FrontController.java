@@ -12,10 +12,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import co.micol.prj.comm.Command;
+import co.micol.prj.notice.command.AjaxNoticeSearch;
 import co.micol.prj.notice.command.NoticeForm;
 import co.micol.prj.notice.command.NoticeInsert;
 import co.micol.prj.notice.command.NoticeList;
 import co.micol.prj.notice.command.NoticeSelect;
+import co.micol.prj.reply.command.ReplyDelete;
+import co.micol.prj.reply.command.ReplyInsert;
+import co.micol.prj.reply.command.ReplyList;
+import co.micol.prj.reply.command.ReplyUpdate;
 
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
@@ -32,9 +37,13 @@ public class FrontController extends HttpServlet {
 		map.put("/noticeList.do", new NoticeList()); //게시글 목록
 		map.put("/noticeForm.do", new NoticeForm()); //게시글 입력폼 호출
 		map.put("/noticeInsert.do", new NoticeInsert()); //게시글 등록
-		
 		map.put("/noticeSelect.do", new NoticeSelect()); //하나의 게시글 조회
+		map.put("/ajaxNoticeSearch.do", new AjaxNoticeSearch());//게시글검색
 		
+		map.put("/replyList.do", new ReplyList()); 
+		map.put("/replyInsert.do", new ReplyInsert());
+		map.put("/replyUpdate.do", new ReplyUpdate());
+		map.put("/replyDelete.do", new ReplyDelete());
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

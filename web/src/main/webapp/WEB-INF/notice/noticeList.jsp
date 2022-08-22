@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 <script src="js/jquery-3.6.0.min.js"></script>
 <style type="text/css">
-tr.colored:hover td{
+tr.colored:hover td{ 
   background-color:#F7FE2E !important;
   color:#303f39 !important;
 }
@@ -17,7 +17,7 @@ tr.colored:hover td{
 <body>
 	<div align="center">
 		<div><h1>게시글 목록</h1></div>
-		<div> 
+		<div>
 			<form id="frm" method="post">
 				<select id="key" name="key">
 				  	<option value="notice_title">제목</option>
@@ -77,7 +77,7 @@ tr.colored:hover td{
 	</div>
 	
 	<script type="text/javascript">
-/* 		function noticeSearch() {
+ 		function noticeSearch() {
 			let key = $("#key").val();
 			let val = $("#val").val();
 			$.ajax({
@@ -96,7 +96,7 @@ tr.colored:hover td{
 					
 				}
 			})
-		} */
+		} 
 		
 		function jsonHtmlConvert(data) {
 			$('tbody').remove();

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body> 
 	<div align="center">
 		<div><h1>게시글 등록</h1></div>
 		<div>
@@ -22,7 +22,7 @@
 							<td width="200">
 								<input type="date" id="noticeDate" name="noticeDate">
 							</td>
-						</tr> 
+						</tr>
 						<tr>
 							<th>제목</th>
 							<td colspan="3">
